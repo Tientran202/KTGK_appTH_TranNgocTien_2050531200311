@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrounddangnhap"
+    >
+
+    // Anh nen
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </LinearLayout>
+
+    //dang nhap
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ĐĂNG KÝ"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            >
+        </TextView>
+    </LinearLayout>
+
+    //dang nhap mat khau
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:hint="Nhập tên của bạn"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white">
+
+            </EditText>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:hint="Nhập tuổi"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white">
+
+            </EditText>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Giới tính"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="30dp"
+                    >
+
+                </TextView>
+            </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                >
+                <RadioButton
+                    android:text="Nam"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                </RadioButton>
+                <RadioButton
+                    android:text="Nữ"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    >
+
+                </RadioButton>
+                <RadioButton
+                    android:text="Khác"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    >
+
+                </RadioButton>
+            </RadioGroup>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:textColor="@color/white"
+                android:hint="Nhập tên dăng nhập"
+                android:textColorHint="@color/white">
+
+            </EditText>
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:hint="Nhập mật khẩu"
+                android:password="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white">
+
+            </EditText>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:password="true"
+                android:hint="Nhập lại mật khẩu"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white">
+
+            </EditText>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    //button dang nhap
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600dp"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="160dp"
+            android:id="@+id/btDangKy"
+            android:layout_height="50dp"
+            android:background="@drawable/ndbuttondanhnhap"
+            android:text="Đăng ký">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+
+    //dang ky quen mât khau
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="560dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/linkDangNhap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đã có tài khoản!!"
+            android:textColor="@color/white"
+            android:textSize="18dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    //dang nhap bang fb hoac gg
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="690dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng ký bằng "
+            android:textColor="@color/white"
+            android:textSize="15sp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/fb"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hoặc "
+            android:textColor="@color/white"
+            android:textSize="15sp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/gg"></ImageView>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
