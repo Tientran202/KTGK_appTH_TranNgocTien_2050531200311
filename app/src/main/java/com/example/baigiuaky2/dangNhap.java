@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.tabs.TabLayout;
+
 public class dangNhap extends AppCompatActivity {
     Button btdangnhap;
     TextView linkdangky;
@@ -25,11 +27,11 @@ public class dangNhap extends AppCompatActivity {
         ettendangnhap = (EditText)findViewById(R.id.ETtenDangNhap);
         etmatkhau =(EditText)findViewById(R.id.ETmatKhau);
 
-        //su kien danh nhap, link dang ky
+        //su kien danh nhap
         btdangnhap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(dangNhap.this,Profile.class);
+                Intent i = new Intent(dangNhap.this,BottomnavigationActivity.class);
                 if(ettendangnhap.getText().toString().equals("") || etmatkhau.getText().toString().equals("")){
                     Toast.makeText(dangNhap.this, "Không được dể trống thông tin đăng nhâp", Toast.LENGTH_SHORT).show();
                 }
@@ -44,7 +46,7 @@ public class dangNhap extends AppCompatActivity {
                 }
             }
         });
-
+        //su kien  link dang ky
         linkdangky.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Profile">
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,7 +20,7 @@
             <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/fb">
+                android:src="@drawable/canabi100">
 
             </de.hdodenhof.circleimageview.CircleImageView>
 
@@ -29,6 +29,7 @@
                 android:layout_height="30dp"
                 android:text="Chỉnh sửa"
                 android:textStyle="bold"
+                android:layout_marginTop="10dp"
                 android:textColor="@color/white"
                 android:background="@drawable/danhnhapmatkhau"
                 android:textSize="10sp">
@@ -61,120 +62,131 @@
                 >
             </TextView>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Trường Đại học SPKT ĐN"
-                        android:textColor="@color/white"
-                        android:textSize="16sp"
-                        android:gravity="center"
-                        android:layout_marginTop="10dp"
-                        android:textStyle="bold" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="MSV: 2050531200311"
-                    android:textColor="@color/white"
-                    android:textSize="16sp"
-                    android:gravity="center"
-                    android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trường Đại học SPKT ĐN"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MSV: 2050531200311"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textStyle="bold" />
 
         </LinearLayout>
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btnBackpro"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/leftw2">
+
+    </ImageView>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="250dp"
-        android:orientation="vertical"
-        android:background="#1C1C1C">
-
+        android:background="#1C1C1C"
+        android:orientation="vertical">
 
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:weightSum="2"
+            android:layout_height="350dp"
             android:orientation="vertical"
-            android:layout_height="match_parent">
+            android:layout_marginTop="40dp"
+            android:weightSum="2">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:gravity="center"
-                >
+                android:gravity="center">
+
                 <LinearLayout
                     android:layout_width="170dp"
                     android:layout_height="140dp"
                     android:layout_marginRight="20dp"
-                    android:gravity="center"
                     android:background="@drawable/profile1"
-                    >
+                    android:gravity="center">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sở thích"
                         android:textColor="@color/white"
-                        android:textStyle="bold"
                         android:textSize="20sp"
-                        />
+                        android:textStyle="bold" />
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="170dp"
                     android:layout_height="140dp"
                     android:layout_marginLeft="20dp"
-                    android:gravity="center"
                     android:background="@drawable/profile1"
-                    >
+                    android:gravity="center">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sở trường"
                         android:textColor="@color/white"
-                        android:textStyle="bold"
                         android:textSize="20sp"
-                        />
+                        android:textStyle="bold" />
 
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:gravity="center"
-                >
+                android:gravity="center">
+
                 <LinearLayout
                     android:layout_width="170dp"
                     android:layout_height="140dp"
                     android:layout_marginRight="20dp"
-                    android:gravity="center"
                     android:background="@drawable/profile1"
-                    >
+                    android:gravity="center">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Chỉ số cơ thể"
                         android:textColor="@color/white"
-                        android:textStyle="bold"
                         android:textSize="20sp"
-                        />
+                        android:textStyle="bold" />
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="170dp"
                     android:layout_height="140dp"
                     android:layout_marginLeft="20dp"
-                    android:gravity="center"
                     android:background="@drawable/profile1"
-                    >
+                    android:gravity="center">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Thông tin khác"
                         android:textColor="@color/white"
-                        android:textStyle="bold"
                         android:textSize="20sp"
-                        />
+                        android:textStyle="bold" />
 
                 </LinearLayout>
             </LinearLayout>
